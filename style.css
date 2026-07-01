@@ -1,96 +1,49 @@
-.hero{
-    background: linear-gradient(135deg,#0057D9,#0078D4,#00A4EF);
-    color:white;
-    text-align:center;
-    padding:100px 20px;
+body {
+
+  font-family: Arial;
+
+  margin: 0;
+
+  background: #f4f8fc;
+
 }
 
-.hero-content{
-    max-width:900px;
-    margin:auto;
+
+
+section {
+
+  max-width: 900px;
+
+  margin: auto;
+
+  padding: 35px;
+
 }
 
-.hero h1{
-    font-size:58px;
-    margin-bottom:20px;
-    font-weight:700;
+
+
+.cards {
+
+  display: flex;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+
 }
 
-.hero h1 span{
-    color:#FFD54F;
-}
 
-.hero p{
-    font-size:22px;
-    line-height:1.7;
-    margin-bottom:40px;
-    opacity:.95;
-}
 
-.hero-buttons{
-    margin-top:20px;
-}
+.card {
 
-.btn{
-    display:inline-block;
-    padding:15px 35px;
-    margin:10px;
-    border-radius:50px;
-    text-decoration:none;
-    font-size:18px;
-    font-weight:bold;
-    transition:.3s;
-}
+  flex: 1;
 
-.btn{
-    background:white;
-    color:#0057D9;
-}
+  min-width: 180px;
 
-.btn:hover{
-    transform:translateY(-4px);
-    box-shadow:0 15px 30px rgba(0,0,0,.2);
-}
+  background: white;
 
-.whatsapp{
-    background:#25D366;
-    color:white;
-}
+  padding: 20px;
 
-.hero-stats{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:80px;
-    margin-top:60px;
-    flex-direction:row;
-    flex-wrap:nowrap;
-}
+  box-shadow: 0 2px 6px #ccc;
 
-.hero-stats div{
-    text-align:center;
-}
-
-@media(max-width:768px){
-    .hero-stats{
-        flex-direction:column;
-        gap:30px;
-    }
-
-    .hero h1{
-        font-size:42px;
-    }
-
-    .hero p{
-        font-size:18px;
-    }
-}
-.hero-stats h2{
-    font-size:42px;
-    margin:0;
-}
-
-.hero-stats p{
-    font-size:16px;
-    margin-top:10px;
 }
