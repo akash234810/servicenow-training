@@ -1,41 +1,106 @@
-body {
-  font-family: Arial;
-  margin: 0;
-  background: #f4f8fc;
-}
+/* RESET */
 
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 35px;
-}
-
-.cards {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.card {
-  flex: 1;
-  min-width: 180px;
-  background: white;
-  padding: 20px;
-  box-shadow: 0 2px 6px #ccc;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
     font-family:Arial,sans-serif;
-    margin:0;
     background:#f4f8fc;
     color:#222;
 }
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(135deg,#0057D9,#0078D4,#00A4EF);
+    color:#fff;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero-content{
+    max-width:1000px;
+    margin:auto;
+}
+
+.hero h1{
+    font-size:58px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#FFD54F;
+}
+
+.hero p{
+    font-size:22px;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    margin-bottom:50px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    margin:10px;
+    background:#fff;
+    color:#0057D9;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+.hero-stats{
+    display:flex;
+    justify-content:center;
+    gap:70px;
+    flex-wrap:wrap;
+}
+
+.hero-stats div{
+    text-align:center;
+}
+
+.hero-stats h2{
+    font-size:42px;
+}
+
+.hero-stats p{
+    font-size:17px;
+}
+
+/* CONTENT */
 
 section{
     max-width:1100px;
     margin:auto;
     padding:60px 20px;
 }
+
+section h2{
+    margin-bottom:20px;
+    color:#0057D9;
+}
+
+/* CARDS */
 
 .cards{
     display:flex;
@@ -46,9 +111,9 @@ section{
 .card{
     flex:1;
     min-width:250px;
-    background:white;
-    padding:25px;
+    background:#fff;
     border-radius:12px;
+    padding:25px;
     box-shadow:0 8px 20px rgba(0,0,0,.08);
     transition:.3s;
 }
@@ -57,11 +122,13 @@ section{
     transform:translateY(-8px);
 }
 
+/* FORM */
+
 input,
 textarea{
     width:100%;
     padding:12px;
-    margin:10px 0;
+    margin:12px 0;
     border:1px solid #ddd;
     border-radius:8px;
     font-size:16px;
@@ -69,21 +136,46 @@ textarea{
 
 button{
     background:#0057D9;
-    color:white;
+    color:#fff;
     border:none;
-    padding:12px 30px;
+    padding:14px 28px;
     border-radius:8px;
     cursor:pointer;
 }
 
 button:hover{
-    background:#0040aa;
+    background:#003f9e;
 }
+
+/* FOOTER */
 
 footer{
     background:#111827;
-    color:white;
+    color:#fff;
     text-align:center;
     padding:30px;
-    margin-top:50px;
+    margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.hero-stats{
+    flex-direction:column;
+    gap:25px;
+}
+
+.cards{
+    flex-direction:column;
+}
+
 }
